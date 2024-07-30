@@ -11,9 +11,12 @@ public class SumLargestNumber {
         System.out.print("Enter the third number: ");
         int num3 = scanner.nextInt();
 
-        int sum = num1+num2+num3;
+        int largest = Math.max(num1, Math.max(num2, num3));
+        int sum = num1 + num2 + num3;
+        double average = sum / 3.0;
 
-        
-        System.out.println("The sum of the number's is: " + sum);
+        System.out.println("The largest number is: " + largest);
+        System.out.println("The sum of the numbers is: " + sum);
+        System.out.println("The average of the numbers is: " + average);
     }
 }
